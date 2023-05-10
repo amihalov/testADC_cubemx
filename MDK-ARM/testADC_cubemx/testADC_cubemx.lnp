@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"testadc_cubemx\startup_stm32f103xb.o"
+"testadc_cubemx\main.o"
+"testadc_cubemx\stm32f1xx_it.o"
+"testadc_cubemx\stm32f1xx_hal_msp.o"
+"testadc_cubemx\stm32f1xx_hal_gpio_ex.o"
+"testadc_cubemx\stm32f1xx_hal_adc.o"
+"testadc_cubemx\stm32f1xx_hal_adc_ex.o"
+"testadc_cubemx\stm32f1xx_hal.o"
+"testadc_cubemx\stm32f1xx_hal_rcc.o"
+"testadc_cubemx\stm32f1xx_hal_rcc_ex.o"
+"testadc_cubemx\stm32f1xx_hal_gpio.o"
+"testadc_cubemx\stm32f1xx_hal_dma.o"
+"testadc_cubemx\stm32f1xx_hal_cortex.o"
+"testadc_cubemx\stm32f1xx_hal_pwr.o"
+"testadc_cubemx\stm32f1xx_hal_flash.o"
+"testadc_cubemx\stm32f1xx_hal_flash_ex.o"
+"testadc_cubemx\stm32f1xx_hal_exti.o"
+"testadc_cubemx\stm32f1xx_hal_tim.o"
+"testadc_cubemx\stm32f1xx_hal_tim_ex.o"
+"testadc_cubemx\system_stm32f1xx.o"
+--strict --scatter "testADC_cubemx\testADC_cubemx.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "testADC_cubemx.map" -o testADC_cubemx\testADC_cubemx.axf
