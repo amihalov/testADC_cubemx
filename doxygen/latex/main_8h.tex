@@ -1,0 +1,79 @@
+\hypertarget{main_8h}{}\doxysection{C\+:/\+STM32/test\+ADC\+\_\+cubemx/\+Core/\+Inc/main.h File Reference}
+\label{main_8h}\index{C:/STM32/testADC\_cubemx/Core/Inc/main.h@{C:/STM32/testADC\_cubemx/Core/Inc/main.h}}
+
+
+\+: Header for \mbox{\hyperlink{main_8c}{main.\+c}} file. This file contains the common defines of the application.  
+
+
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+hal.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8h_a065dcfa648ca52ed6214008cb177de36}\label{main_8h_a065dcfa648ca52ed6214008cb177de36}} 
+\#define {\bfseries ADC\+\_\+\+CHANNELS}~1
+\begin{DoxyCompactList}\small\item\em Кол-\/во каналов АЦП \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8h_a471c086a7d3797eb27c08f3359ff35aa}\label{main_8h_a471c086a7d3797eb27c08f3359ff35aa}} 
+\#define {\bfseries ADC\+\_\+\+SAMPLES}~(uint32\+\_\+t)250
+\begin{DoxyCompactList}\small\item\em Кол-\/во сырых данных с АЦП \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8h_a785703f40a8b99f595a28c3c152fff45}\label{main_8h_a785703f40a8b99f595a28c3c152fff45}} 
+\#define {\bfseries TOG\+\_\+\+LED}~HAL\+\_\+\+GPIO\+\_\+\+Toggle\+Pin(GPIOC, GPIO\+\_\+\+PIN\+\_\+13)
+\begin{DoxyCompactList}\small\item\em �?нверсия порта тестового светодиода \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8h_aaa2c897f502cdef04fe8bccc1887750d}\label{main_8h_aaa2c897f502cdef04fe8bccc1887750d}} 
+\#define {\bfseries CONST\+\_\+1\+SEC}~40
+\begin{DoxyCompactList}\small\item\em Кол-\/во 25мс за 1 сек \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8h_ae70bce6c39d0b570a7523b86738cec4b}{HAL\+\_\+\+TIM\+\_\+\+Msp\+Post\+Init}} (TIM\+\_\+\+Handle\+Type\+Def $\ast$htim)
+\item 
+void \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8h_af33eb3cecca47f35681b6237078ee68a}\label{main_8h_af33eb3cecca47f35681b6237078ee68a}} 
+uint8\+\_\+t {\bfseries flg25ms}
+\begin{DoxyCompactList}\small\item\em флаг 25мс \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8h_a68f73d72abebac9629ed65f4de87d452}\label{main_8h_a68f73d72abebac9629ed65f4de87d452}} 
+uint16\+\_\+t {\bfseries adc\+Data} \mbox{[}\mbox{\hyperlink{main_8h_a471c086a7d3797eb27c08f3359ff35aa}{ADC\+\_\+\+SAMPLES}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em массив сырых данных с АЦП \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8h_a0e5c4c6313b78fd6f1b3dbce3a9eeeda}\label{main_8h_a0e5c4c6313b78fd6f1b3dbce3a9eeeda}} 
+uint32\+\_\+t {\bfseries adc\+Voltage}
+\begin{DoxyCompactList}\small\item\em напряжение в мВ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Header for \mbox{\hyperlink{main_8c}{main.\+c}} file. This file contains the common defines of the application. 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2023 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8h_a1730ffe1e560465665eb47d9264826f9}\label{main_8h_a1730ffe1e560465665eb47d9264826f9}} 
+\index{main.h@{main.h}!Error\_Handler@{Error\_Handler}}
+\index{Error\_Handler@{Error\_Handler}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Error\_Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{main_8h_ae70bce6c39d0b570a7523b86738cec4b}\label{main_8h_ae70bce6c39d0b570a7523b86738cec4b}} 
+\index{main.h@{main.h}!HAL\_TIM\_MspPostInit@{HAL\_TIM\_MspPostInit}}
+\index{HAL\_TIM\_MspPostInit@{HAL\_TIM\_MspPostInit}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{HAL\_TIM\_MspPostInit()}{HAL\_TIM\_MspPostInit()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+TIM\+\_\+\+Msp\+Post\+Init (\begin{DoxyParamCaption}\item[{TIM\+\_\+\+Handle\+Type\+Def $\ast$}]{htim }\end{DoxyParamCaption})}
+
+TIM2 GPIO Configuration PA2 -\/-\/-\/---\texorpdfstring{$>$}{>} TIM2\+\_\+\+CH3
+
+TIM2 GPIO Configuration PA2 -\/-\/-\/---\texorpdfstring{$>$}{>} TIM2\+\_\+\+CH3
