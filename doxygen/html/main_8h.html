@@ -69,7 +69,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_1e153e38b498a71b7c673a62790f7d21.html">testADC_cubemx</a></li><li class="navelem"><a class="el" href="dir_6bafe008b398067ac5e184ab4f3c6e96.html">Core</a></li><li class="navelem"><a class="el" href="dir_f3b3403eff7143e785c0d194750dc989.html">Inc</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_e2489e887f17afa3cbc07a4ec152cdd2.html">Inc</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,11 +84,25 @@ $(function() {
 <p>: Header for <a class="el" href="main_8c.html" title=": Main program body">main.c</a> file. This file contains the common defines of the application.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;stm32f1xx_hal.h&quot;</code><br />
+<code>#include &quot;stm32f1xx_ll_adc.h&quot;</code><br />
+<code>#include &quot;stm32f1xx_ll_dma.h&quot;</code><br />
+<code>#include &quot;stm32f1xx_ll_bus.h&quot;</code><br />
+<code>#include &quot;stm32f1xx_ll_cortex.h&quot;</code><br />
+<code>#include &quot;stm32f1xx_ll_rcc.h&quot;</code><br />
+<code>#include &quot;stm32f1xx_ll_system.h&quot;</code><br />
+<code>#include &quot;stm32f1xx_ll_utils.h&quot;</code><br />
+<code>#include &quot;stm32f1xx_ll_pwr.h&quot;</code><br />
+<code>#include &quot;stm32f1xx_ll_gpio.h&quot;</code><br />
+<code>#include &quot;stm32f1xx_ll_exti.h&quot;</code><br />
 </div>
 <p><a href="main_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a049382f20e152e339ae89f6f872cd09a"><td class="memItemLeft" align="right" valign="top"><a id="a049382f20e152e339ae89f6f872cd09a" name="a049382f20e152e339ae89f6f872cd09a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC_LL</b></td></tr>
+<tr class="memdesc:a049382f20e152e339ae89f6f872cd09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип используемой библиотеки для АЦП <br /></td></tr>
+<tr class="separator:a049382f20e152e339ae89f6f872cd09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065dcfa648ca52ed6214008cb177de36"><td class="memItemLeft" align="right" valign="top"><a id="a065dcfa648ca52ed6214008cb177de36" name="a065dcfa648ca52ed6214008cb177de36"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC_CHANNELS</b>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a065dcfa648ca52ed6214008cb177de36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кол-во каналов АЦП <br /></td></tr>
@@ -108,6 +122,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6a2727ff73e5d6855b57cbb008190e29"><td class="memItemLeft" align="right" valign="top"><a id="a6a2727ff73e5d6855b57cbb008190e29" name="a6a2727ff73e5d6855b57cbb008190e29"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ADC_DMA_TransferComplete_Callback</b> (void)</td></tr>
+<tr class="separator:a6a2727ff73e5d6855b57cbb008190e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae70bce6c39d0b570a7523b86738cec4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ae70bce6c39d0b570a7523b86738cec4b">HAL_TIM_MspPostInit</a> (TIM_HandleTypeDef *htim)</td></tr>
 <tr class="separator:ae70bce6c39d0b570a7523b86738cec4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1730ffe1e560465665eb47d9264826f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a> (void)</td></tr>

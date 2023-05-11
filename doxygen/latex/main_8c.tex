@@ -41,25 +41,18 @@ int {\bfseries fputc} (int ch, FILE $\ast$f)
 int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
 \begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{main_8c_af20a88180db1113be1e89266917d148b}{HAL\+\_\+\+ADC\+\_\+\+Conv\+Cplt\+Callback}} (ADC\+\_\+\+Handle\+Type\+Def $\ast$hadc)
-\begin{DoxyCompactList}\small\item\em Функция обработки сырых данных полученных при помощи ПДП ~\newline
- \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Функция выставления флага завершения сбора сырых данных с АЦП при помощи ПДП используя библиотеку HAL. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{main_8c_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
 \begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{main_8c_a22b804736f5648d52f639b2647d4ed13}\label{main_8c_a22b804736f5648d52f639b2647d4ed13}} 
-ADC\+\_\+\+Handle\+Type\+Def {\bfseries hadc1}
-\item 
-\mbox{\Hypertarget{main_8c_a1c126854bb1813d31ab4776b21dcc51f}\label{main_8c_a1c126854bb1813d31ab4776b21dcc51f}} 
-DMA\+\_\+\+Handle\+Type\+Def {\bfseries hdma\+\_\+adc1}
-\item 
 \mbox{\Hypertarget{main_8c_a2c80fd5510e2990a59a5c90d745c716c}\label{main_8c_a2c80fd5510e2990a59a5c90d745c716c}} 
 TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim2}
-\item 
+\begin{DoxyCompactList}\small\item\em Таймер для ШИМ \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{main_8c_a85788cec5a97ee377e4ee2e74f026484}\label{main_8c_a85788cec5a97ee377e4ee2e74f026484}} 
 TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim4}
-\item 
+\begin{DoxyCompactList}\small\item\em Таймер для запуска АЦП \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{main_8c_a68f73d72abebac9629ed65f4de87d452}\label{main_8c_a68f73d72abebac9629ed65f4de87d452}} 
 uint16\+\_\+t {\bfseries adc\+Data} \mbox{[}\mbox{\hyperlink{main_8h_a471c086a7d3797eb27c08f3359ff35aa}{ADC\+\_\+\+SAMPLES}}\mbox{]}
 \begin{DoxyCompactList}\small\item\em массив сырых данных с АЦП \end{DoxyCompactList}\item 
@@ -120,8 +113,7 @@ This function is executed in case of error occurrence.
 
 
 
-Функция обработки сырых данных полученных при помощи ПДП ~\newline
- 
+Функция выставления флага завершения сбора сырых данных с АЦП при помощи ПДП используя библиотеку HAL. 
 
 
 \begin{DoxyParams}{Parameters}

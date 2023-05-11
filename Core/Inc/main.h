@@ -28,6 +28,17 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx_hal.h"
+#include "stm32f1xx_ll_adc.h"
+#include "stm32f1xx_ll_dma.h"
+#include "stm32f1xx_ll_bus.h"
+#include "stm32f1xx_ll_cortex.h"
+#include "stm32f1xx_ll_rcc.h"
+#include "stm32f1xx_ll_system.h"
+#include "stm32f1xx_ll_utils.h"
+#include "stm32f1xx_ll_pwr.h"
+#include "stm32f1xx_ll_gpio.h"
+
+#include "stm32f1xx_ll_exti.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -42,11 +53,15 @@ extern "C" {
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
 
+
+
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
 
+//! Тип используемой библиотеки для АЦП
+#define ADC_LL
 //! Кол-во каналов АЦП
 #define 	ADC_CHANNELS     	1
 //! Кол-во сырых данных с АЦП 
@@ -61,6 +76,7 @@ extern uint8_t flg25ms;
 extern uint16_t adcData[ADC_SAMPLES];
 extern uint32_t adcVoltage;
 
+void ADC_DMA_TransferComplete_Callback(void);
 
 /* USER CODE END EM */
 

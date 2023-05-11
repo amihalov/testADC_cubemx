@@ -6,9 +6,22 @@
 
 
 {\ttfamily \#include \char`\"{}stm32f1xx\+\_\+hal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+ll\+\_\+adc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+ll\+\_\+dma.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+ll\+\_\+bus.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+ll\+\_\+cortex.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+ll\+\_\+rcc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+ll\+\_\+system.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+ll\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+ll\+\_\+pwr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+ll\+\_\+gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+ll\+\_\+exti.\+h\char`\"{}}\newline
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{main_8h_a049382f20e152e339ae89f6f872cd09a}\label{main_8h_a049382f20e152e339ae89f6f872cd09a}} 
+\#define {\bfseries ADC\+\_\+\+LL}
+\begin{DoxyCompactList}\small\item\em Тип используемой библиотеки для АЦП \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{main_8h_a065dcfa648ca52ed6214008cb177de36}\label{main_8h_a065dcfa648ca52ed6214008cb177de36}} 
 \#define {\bfseries ADC\+\_\+\+CHANNELS}~1
 \begin{DoxyCompactList}\small\item\em Кол-\/во каналов АЦП \end{DoxyCompactList}\item 
@@ -23,6 +36,9 @@
 \begin{DoxyCompactList}\small\item\em Кол-\/во 25мс за 1 сек \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8h_a6a2727ff73e5d6855b57cbb008190e29}\label{main_8h_a6a2727ff73e5d6855b57cbb008190e29}} 
+void {\bfseries ADC\+\_\+\+DMA\+\_\+\+Transfer\+Complete\+\_\+\+Callback} (void)
 \item 
 void \mbox{\hyperlink{main_8h_ae70bce6c39d0b570a7523b86738cec4b}{HAL\+\_\+\+TIM\+\_\+\+Msp\+Post\+Init}} (TIM\+\_\+\+Handle\+Type\+Def $\ast$htim)
 \item 
